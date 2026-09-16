@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Timmy Guinn Jr. For High Springs City Commission Seat 1</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creamBg: '#fef3d6',
+                        peachBg: '#fbbd8c',
+                        brandGreenBtn: '#1b402d',
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-bullet-list {
+            list-style-type: disc;
+        }
+        .custom-bullet-list li::marker {
+            color: #111827;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body class="bg-creamBg text-gray-900 font-sans min-h-screen flex flex-col justify-between selection:bg-brandGreenBtn selection:text-white antialiased">
+
+    <!-- Top Navigation Header -->
+    <header class="w-full max-w-7xl mx-auto px-6 pt-6 pb-4 flex justify-end items-center gap-8">
+        <nav class="flex items-center gap-8 text-sm sm:text-base font-semibold text-gray-800">
+            <a href="index.html" class="hover:text-black transition-all">Home</a>
+            <a href="about.html" class="border-b-2 border-gray-900 pb-0.5 font-bold text-black transition-all">About</a>
+        </nav>
+        <a href="mailto:guinn4commission@gmail.com" class="bg-brandGreenBtn hover:bg-opacity-90 text-white font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 shadow-sm transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
+            Contact Me <span class="text-lg font-light leading-none">+</span>
+        </a>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex-grow space-y-4">
+        
+        <!-- Header Banner Card -->
+        <div class="bg-peachBg rounded-lg p-8 md:p-12 shadow-sm border border-orange-200/50">
+            <h1 class="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-gray-900 tracking-tight">
+                About Me
+            </h1>
+        </div>
+
+        <!-- Main Content Card -->
+        <div class="bg-peachBg rounded-lg p-6 sm:p-10 lg:p-12 shadow-sm border border-orange-200/50 space-y-8">
+            
+            <!-- Subtitle -->
+            <h2 class="text-center font-extrabold text-xl sm:text-2xl lg:text-3xl text-gray-900 tracking-tight leading-snug">
+                My background enables me to relate to and engage with people from all walks of life.
+            </h2>
+
+            <!-- Section Title -->
+            <div class="pt-2">
+                <h3 class="font-bold text-base sm:text-lg text-gray-900 underline underline-offset-4 decoration-1">
+                    Professional and Life Experience
+                </h3>
+            </div>
+
+            <!-- Two-Column Experience Lists -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-start pt-1">
+                
+                <!-- Left Column -->
+                <ul class="custom-bullet-list pl-5 space-y-3.5 text-gray-900 font-bold text-sm sm:text-[15px] leading-snug">
+                    <li>Farmed for North Central Florida sustainable farm</li>
+                    <li>Cashier and bagger for Publix</li>
+                    <li>Survey assistant for old school surveyor</li>
+                    <li>Lifelong fisherman and hunter</li>
+                    <li>Network Operations Coordinator for University of Florida Cancer Institute</li>
+                    <li>Grant writing experience</li>
+                    <li>Auditing experience</li>
+                    <li>Youth soccer head coach</li>
+                </ul>
+
+                <!-- Right Column -->
+                <ul class="custom-bullet-list pl-5 space-y-3.5 text-gray-900 font-bold text-sm sm:text-[15px] leading-snug">
+                    <li>High Springs Community School PTA and PTO Member</li>
+                    <li>Alachua Count Health Facilities Authority Advisory Board</li>
+                    <li>Homebrewer and amateur winemaker</li>
+                    <li>Grew up around a "master carpenter" father and learned everything about house building from the footer to the roof</li>
+                    <li>Raised cows and helped with farmhand work on a family farm</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-7xl mx-auto px-6 py-8 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+            <!-- Left Side Disclaimer -->
+            <div class="text-xs text-gray-800 font-medium">
+                Paid by Timothy Guinn for High Springs Commission - Seat 1
+            </div>
+
+            <!-- Center/Right Side Contact Info -->
+            <div class="text-center md:text-center text-xs text-gray-900 space-y-1">
+                <div class="font-bold text-sm">Contact</div>
+                <div>352-448-8716</div>
+                <div>
+                    <a href="mailto:guinn4commission@gmail.com" class="hover:underline">guinn4commission@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
