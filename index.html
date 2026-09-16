@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timothy "Timmy" Guinn Jr. - For High Springs City Commission Seat 1</title>
+    <title>Timmy Guinn Jr. - For High Springs City Commission Seat 1</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -39,10 +42,8 @@
     <!-- Top Navigation Header -->
     <header class="w-full max-w-7xl mx-auto px-6 pt-6 pb-4 flex justify-end items-center gap-8">
         <nav class="flex items-center gap-8 text-sm sm:text-base font-semibold text-gray-800">
-              <nav class="flex space-x-8">
-              <a href="index.html" class="text-sm font-semibold text-gray-900 border-b-2 border-gray-900 pb-0.5">Home</a>
-              <a href="about.html" class="text-sm font-medium text-gray-700 hover:text-gray-900">About</a>
-        </nav>
+            <a href="index.html" class="border-b-2 border-gray-900 pb-0.5 font-bold text-black transition-all">Home</a>
+            <a href="about.html" class="hover:text-black transition-all">About</a>
         </nav>
         <a href="mailto:guinn4commission@gmail.com" class="bg-brandGreenBtn hover:bg-opacity-90 text-white font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 shadow-sm transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
             Contact Me <span class="text-lg font-light leading-none">+</span>
@@ -50,7 +51,9 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="w-full max-w-7xl mx-auto px-6 sm:px-8 py-6 lg:py-12 flex-grow flex items-start">
+    <main class="w-full max-w-7xl mx-auto px-6 sm:px-8 py-6 lg:py-10 flex-grow space-y-12 lg:space-y-16">
+        
+        <!-- Two Column Grid: Goals and Campaign Graphic -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start w-full">
             
             <!-- Left Column: Goals Text -->
@@ -74,10 +77,10 @@
 
             <!-- Right Column: Campaign Sign Image Reference -->
             <div class="lg:col-span-7 w-full flex justify-center items-center">
-                <div class="w-full bg-white rounded-sm shadow-lg overflow-hidden border border-gray-200">
+                <div class="w-full bg-white rounded-sm shadow-md overflow-hidden border border-gray-200">
                     <img 
                         src="guinncampaignsign.jpg" 
-                        alt="Timothy &quot;Timmy&quot; Guinn Jr. For High Springs City Commission - Seat 1"
+                        alt='Timothy "Timmy" Guinn Jr. For High Springs City Commission - Seat 1' 
                         class="w-full h-auto object-contain block"
                         onerror="this.onerror=null; this.src='guinncampaignsign.png';"
                     />
@@ -85,11 +88,63 @@
             </div>
 
         </div>
+
+        <!-- Lower Three-Photo Gallery Section -->
+        <div class="w-full pt-4 pb-2">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 max-w-6xl mx-auto">
+                
+                <!-- Left Image: Turtle -->
+                <div class="w-full md:w-1/3 flex justify-center items-center">
+                    <img 
+                        src="turtle.jpg" 
+                        alt="Turtle on a log" 
+                        class="w-full max-w-sm h-64 sm:h-72 object-cover rounded-none shadow-sm"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x450/d9c099/1b402d?text=turtle.jpg';"
+                    />
+                </div>
+
+                <!-- Center Image: Heron (Tall Portrait) -->
+                <div class="w-full md:w-1/3 flex justify-center items-center">
+                    <img 
+                        src="heron.jpg" 
+                        alt="Great Blue Heron" 
+                        class="w-full max-w-xs h-80 sm:h-96 md:h-[420px] object-cover rounded-none shadow-sm"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x700/d9c099/1b402d?text=heron.jpg';"
+                    />
+                </div>
+
+                <!-- Right Image: Gator -->
+                <div class="w-full md:w-1/3 flex justify-center items-center">
+                    <img 
+                        src="gator.jpg" 
+                        alt="Alligator in spring water" 
+                        class="w-full max-w-sm h-64 sm:h-72 object-cover rounded-none shadow-sm"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x450/d9c099/1b402d?text=gator.jpg';"
+                    />
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center text-xs text-gray-600">
-        Paid by Timothy Guinn for High Springs City Commission - Seat 1.
+    <!-- Footer Section -->
+    <footer class="w-full max-w-7xl mx-auto px-6 py-8 mt-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+            <!-- Left Side Disclaimer -->
+            <div class="text-xs text-gray-800 font-medium">
+                Paid by Timothy Guinn for High Springs Commission - Seat 1
+            </div>
+
+            <!-- Center/Right Side Contact Info -->
+            <div class="text-center md:text-center text-xs text-gray-900 space-y-1">
+                <div class="font-bold text-sm">Contact</div>
+                <div>352-448-8716</div>
+                <div>
+                    <a href="mailto:guinn4commission@gmail.com" class="hover:underline">guinn4commission@gmail.com</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
