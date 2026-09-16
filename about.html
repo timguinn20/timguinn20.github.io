@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Timmy Guinn Jr. For High Springs City Commission Seat 1</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        creamBg: '#fef3d6',
-                        peachBg: '#fbbd8c',
-                        brandGreenBtn: '#1b402d',
-                    },
-                    fontFamily: {
-                        sans: ['"Open Sans"', 'sans-serif'],
-                        heading: ['Montserrat', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .custom-bullet-list {
-            list-style-type: disc;
-        }
-        .custom-bullet-list li::marker {
-            color: #111827;
-            font-size: 1.1em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Timmy Guinn Jr. For High Springs City Commission Seat 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-creamBg text-gray-900 font-sans min-h-screen flex flex-col justify-between selection:bg-brandGreenBtn selection:text-white antialiased">
+<body class="bg-[#fef3d6] text-gray-900 min-h-screen flex flex-col font-sans antialiased">
 
-    <!-- Top Navigation Header -->
-    <header class="w-full max-w-7xl mx-auto px-6 pt-6 pb-4 flex justify-end items-center gap-8">
-        <nav class="flex items-center gap-8 text-sm sm:text-base font-semibold text-gray-800">
-            <a href="index.html" class="hover:text-black transition-all">Home</a>
-            <a href="about.html" class="border-b-2 border-gray-900 pb-0.5 font-bold text-black transition-all">About</a>
-        </nav>
-        <a href="mailto:guinn4commission@gmail.com" class="bg-brandGreenBtn hover:bg-opacity-90 text-white font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 shadow-sm transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
-            Contact Me <span class="text-lg font-light leading-none">+</span>
-        </a>
-    </header>
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-[#fef3d6]/90 backdrop-blur-md border-b border-amber-200/50">
+    <div class="max-w-6xl w-full mx-auto px-4 py-4 flex items-center justify-between">
+      <nav class="flex items-center gap-2 text-sm sm:text-base font-semibold text-gray-800">
+        <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-amber-100 text-gray-700 hover:text-gray-900 transition-all">Home</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg bg-amber-200/60 text-gray-900 transition-all">About</a>
+      </nav>
+      <a 
+        href="mailto:guinn4commission@gmail.com" 
+        class="bg-[#1b4332] hover:bg-[#143225] text-white font-medium text-sm sm:text-base px-5 py-2.5 rounded-xl flex items-center gap-2 shadow-sm transition-all transform hover:-translate-y-0.5"
+      >
+        Contact Me <span class="text-lg leading-none">+</span>
+      </a>
+    </div>
+  </header>
 
-    <!-- Main Content Area -->
-    <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex-grow space-y-4">
+  <!-- Main Content Area -->
+  <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-1 space-y-8">
+    
+    <!-- Top Peach Card: Title Banner -->
+    <section class="bg-[#fbbd8c] rounded-2xl p-8 sm:p-12 shadow-md border border-amber-200/60 text-left">
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight leading-none">
+        About Me
+      </h1>
+    </section>
+
+    <!-- Content Peach Card: Subtitle & Experience List -->
+    <section class="bg-[#fbbd8c] rounded-2xl p-6 sm:p-10 shadow-md border border-amber-200/60 text-gray-900">
+      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-snug">
+        My background enables me to relate to and engage with people from all walks of life.
+      </h2>
+
+      <!-- Experience Grid -->
+      <div class="space-y-4">
+        <h3 class="text-base sm:text-lg font-bold underline decoration-2 underline-offset-4 text-gray-900">
+          Professional and Life Experience
+        </h3>
         
-        <!-- Header Banner Card -->
-        <div class="bg-peachBg rounded-lg p-8 md:p-12 shadow-sm border border-orange-200/50">
-            <h1 class="font-heading font-black text-4xl sm:text-5xl lg:text-6xl text-gray-900 tracking-tight">
-                About Me
-            </h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 text-sm sm:text-base font-semibold text-gray-900 leading-relaxed">
+          <!-- Column 1 -->
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Farmed for North Central Florida sustainable farm</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Cashier and bagger for Publix</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Survey assistant for old school surveyor</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Lifelong fisherman and hunter</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Network Operations Coordinator for University of Florida Cancer Institute</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Grant writing experience</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Auditing experience</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Youth soccer head coach</span>
+            </li>
+          </ul>
+
+          <!-- Column 2 -->
+          <ul class="space-y-3">
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>High Springs Community School PTA and PTO Member</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Alachua County Health Facilities Authority Advisory Board</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Homebrewer and amateur winemaker</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Grew up around a "master carpenter" father and learned everything about house building from the footer to the roof</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
+              <span>Raised cows and helped with farmhand work on a family farm</span>
+            </li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <!-- Main Content Card -->
-        <div class="bg-peachBg rounded-lg p-6 sm:p-10 lg:p-12 shadow-sm border border-orange-200/50 space-y-8">
-            
-            <!-- Subtitle -->
-            <h2 class="text-center font-extrabold text-xl sm:text-2xl lg:text-3xl text-gray-900 tracking-tight leading-snug">
-                My background enables me to relate to and engage with people from all walks of life.
-            </h2>
+  </main>
 
-            <!-- Section Title -->
-            <div class="pt-2">
-                <h3 class="font-bold text-base sm:text-lg text-gray-900 underline underline-offset-4 decoration-1">
-                    Professional and Life Experience
-                </h3>
-            </div>
-
-            <!-- Two-Column Experience Lists -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-start pt-1">
-                
-                <!-- Left Column -->
-                <ul class="custom-bullet-list pl-5 space-y-3.5 text-gray-900 font-bold text-sm sm:text-[15px] leading-snug">
-                    <li>Farmed for North Central Florida sustainable farm</li>
-                    <li>Cashier and bagger for Publix</li>
-                    <li>Survey assistant for old school surveyor</li>
-                    <li>Lifelong fisherman and hunter</li>
-                    <li>Network Operations Coordinator for University of Florida Cancer Institute</li>
-                    <li>Grant writing experience</li>
-                    <li>Auditing experience</li>
-                    <li>Youth soccer head coach</li>
-                </ul>
-
-                <!-- Right Column -->
-                <ul class="custom-bullet-list pl-5 space-y-3.5 text-gray-900 font-bold text-sm sm:text-[15px] leading-snug">
-                    <li>High Springs Community School PTA and PTO Member</li>
-                    <li>Alachua Count Health Facilities Authority Advisory Board</li>
-                    <li>Homebrewer and amateur winemaker</li>
-                    <li>Grew up around a "master carpenter" father and learned everything about house building from the footer to the roof</li>
-                    <li>Raised cows and helped with farmhand work on a family farm</li>
-                </ul>
-
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="w-full max-w-7xl mx-auto px-6 py-8 mt-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
-            <!-- Left Side Disclaimer -->
-            <div class="text-xs text-gray-800 font-medium">
-                Paid by Timothy "Timmy" Guinn for High Springs City Commission - Seat 1
-            </div>
-
-            <!-- Center/Right Side Contact Info -->
-            <div class="text-center md:text-center text-xs text-gray-900 space-y-1">
-                <div class="font-bold text-sm">Contact</div>
-                <div>352-448-8716</div>
-                <div>
-                    <a href="mailto:guinn4commission@gmail.com" class="hover:underline">guinn4commission@gmail.com</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Footer Section -->
+  <footer class="border-t border-amber-200/60 mt-12 bg-amber-100/30">
+    <div class="max-w-6xl w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-700 gap-6">
+      <div class="text-left max-w-md font-medium text-gray-800">
+        Paid by Timothy Guinn for High Springs City Commission - Seat 1
+      </div>
+      <div class="text-center md:text-right font-medium space-y-1">
+        <p class="font-bold text-gray-900 uppercase tracking-wider text-[11px]">Contact Campaign</p>
+        <p><a href="tel:3524488716" class="hover:underline hover:text-gray-900">352-448-8716</a></p>
+        <p><a href="mailto:guinn4commission@gmail.com" class="hover:underline hover:text-gray-900">guinn4commission@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
