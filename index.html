@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmy Guinn Jr. - For High Springs City Commission Seat 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creamBg: '#fef3d6',
+                        brandGreenBtn: '#1b402d',
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-bullet-list {
+            list-style-type: disc;
+        }
+        .custom-bullet-list li::marker {
+            color: #111827;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body class="bg-creamBg text-gray-900 font-sans min-h-screen flex flex-col justify-between selection:bg-brandGreenBtn selection:text-white antialiased">
+
+    <!-- Top Navigation Header -->
+    <header class="w-full max-w-7xl mx-auto px-6 pt-6 pb-4 flex justify-end items-center gap-8">
+        <nav class="flex items-center gap-8 text-sm sm:text-base font-semibold text-gray-800">
+            <a href="#" class="border-b-2 border-gray-900 pb-0.5 hover:text-black transition-all">Home</a>
+            <a href="#" class="hover:text-black transition-all">About</a>
+        </nav>
+        <a href="mailto:guinn4commission@gmail.com" class="bg-brandGreenBtn hover:bg-opacity-90 text-white font-semibold px-6 py-2.5 rounded-full flex items-center gap-2 shadow-sm transition-all hover:scale-105 active:scale-95 text-sm sm:text-base">
+            Contact Me <span class="text-lg font-light leading-none">+</span>
+        </a>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-7xl mx-auto px-6 sm:px-8 py-6 lg:py-12 flex-grow flex items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start w-full">
+            
+            <!-- Left Column: Goals Text -->
+            <div class="lg:col-span-5 space-y-6 pt-1">
+                <h1 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl tracking-tight text-gray-900 uppercase leading-tight">
+                    MY GOALS<br />FOR HIGH<br />SPRINGS
+                </h1>
+
+                <ul class="custom-bullet-list pl-5 space-y-6 text-gray-900 leading-relaxed font-bold text-sm sm:text-[15px]">
+                    <li>
+                        Effective governance requires mutual respect. I am committed to bringing a strict standard of decorum to the dais and to my daily life. We can vigorously debate the best solutions for High Springs without degrading our neighbors or dividing our city. A unified commission gets things done; a divided one just makes noise.
+                    </li>
+                    <li>
+                        Increasing revenue by incentivizing businesses the community wants and need in order to try and meet our budgetary constraints.
+                    </li>
+                    <li>
+                        We aren't just managing a budget; we are building a hometown. Every decision we make on the commission should pass one simple test: Does this make High Springs a place where our children will want to raise their own kids?
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Column: Campaign Sign Image Reference -->
+            <div class="lg:col-span-7 w-full flex justify-center items-center">
+                <div class="w-full bg-white rounded-sm shadow-lg overflow-hidden border border-gray-200">
+                    <img 
+                        src="guinncampaignsign.jpg" 
+                        alt="Timmy Guinn Jr. For High Springs City Commission - Seat 1" 
+                        class="w-full h-auto object-contain block"
+                        onerror="this.onerror=null; this.src='guinncampaignsign.png';"
+                    />
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-xs text-gray-600">
+        &copy; Timmy Guinn Jr. Campaign. All rights reserved.
+    </footer>
+
+</body>
+</html>
