@@ -27,11 +27,11 @@
   <!-- Main Content Area -->
   <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-1 space-y-12">
     
-    <!-- Goals & Campaign Sign Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+    <!-- Top Grid: Goals + Candidate Photo + Campaign Sign -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
       
-      <!-- Campaign Sign (Shows FIRST on Mobile: order-1, SECOND on Desktop: md:order-2) -->
-      <div class="order-1 md:order-2 bg-[#fbbd8c] rounded-2xl p-4 sm:p-6 flex items-center justify-center shadow-md border border-amber-200/60">
+      <!-- Campaign Sign (Order 1 on Mobile, Right side on Desktop) -->
+      <div class="order-1 lg:order-2 lg:col-span-1 bg-[#fbbd8c] rounded-2xl p-4 sm:p-6 flex items-center justify-center shadow-md border border-amber-200/60">
         <img 
           src="guinncampaignsign.jpg" 
           alt='Timothy "Timmy" Guinn Jr. For High Springs City Commission - Seat 1' 
@@ -40,25 +40,40 @@
         />
       </div>
 
-      <!-- Goals Card (Shows SECOND on Mobile: order-2, FIRST on Desktop: md:order-1) -->
-      <div class="order-2 md:order-1 bg-[#fbbd8c] rounded-2xl p-7 sm:p-9 flex flex-col justify-center text-gray-900 shadow-md border border-amber-200/60">
-        <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight mb-6 leading-tight border-b-2 border-gray-900/10 pb-4">
-          MY GOALS<br>FOR HIGH<br>SPRINGS
-        </h2>
-        <ul class="space-y-4 text-sm sm:text-base font-medium leading-relaxed">
-          <li class="flex items-start gap-3">
-            <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
-            <span><strong>Effective governance requires mutual respect.</strong> I am committed to bringing a strict standard of decorum to the dais and to my daily life. We can vigorously debate the best solutions for High Springs without degrading our neighbors or dividing our city. A unified commission gets things done; a divided one just makes noise.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
-            <span>Increasing revenue by incentivizing businesses the community wants and need in order to try and meet our budgetary constraints.</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
-            <span>We aren't just managing a budget; we are building a hometown. Every decision we make on the commission should pass one simple test: Does this make High Springs a place where our children will want to raise their own kids?</span>
-          </li>
-        </ul>
+      <!-- Candidate Photo + Goals Container (Order 2 on Mobile, Left side on Desktop) -->
+      <div class="order-2 lg:order-1 lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-6 bg-[#fbbd8c] rounded-2xl p-6 sm:p-8 shadow-md border border-amber-200/60 items-center">
+        
+        <!-- Candidate Photo -->
+        <div class="sm:col-span-1 flex justify-center">
+          <img 
+            src="candidate.JPEG" 
+            alt='Timothy "Timmy" Guinn Jr.' 
+            class="rounded-2xl w-full max-w-[240px] sm:max-w-none h-[280px] sm:h-[340px] object-cover shadow-md border-2 border-amber-100/50"
+            onerror="this.onerror=null; this.src='candidate.png';"
+          />
+        </div>
+
+        <!-- Goals List -->
+        <div class="sm:col-span-2 text-gray-900">
+          <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight mb-4 leading-tight border-b-2 border-gray-900/10 pb-3">
+            MY GOALS<br>FOR HIGH SPRINGS
+          </h2>
+          <ul class="space-y-3 text-sm sm:text-base font-medium leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span><strong>Effective governance requires mutual respect.</strong> I am committed to bringing a strict standard of decorum to the dais and to my daily life. We can vigorously debate the best solutions for High Springs without degrading our neighbors or dividing our city. A unified commission gets things done; a divided one just makes noise.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span>Increasing revenue by incentivizing businesses the community wants and need in order to try and meet our budgetary constraints.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span>We aren't just managing a budget; we are building a hometown. Every decision we make on the commission should pass one simple test: Does this make High Springs a place where our children will want to raise their own kids?</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
 
     </div>
@@ -94,7 +109,7 @@
       
       <!-- Photo Attribution Line -->
       <p class="text-center text-xs sm:text-sm font-medium text-gray-700 italic mt-6">
-        Photos courtesy of my wife, Julia Guinn.
+        Photos courtesy of my wife Julia Guinn
       </p>
     </section>
 
@@ -104,7 +119,7 @@
   <footer class="border-t border-amber-200/60 mt-12 bg-amber-100/30">
     <div class="max-w-6xl w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-700 gap-6">
       <div class="text-left max-w-md font-medium text-gray-800">
-        Paid by Timothy Guinn Jr. for High Springs City Commission - Seat 1
+        Paid by Timothy "Timmy" Guinn for High Springs City Commission - Seat 1
       </div>
       <div class="text-center md:text-right font-medium space-y-1">
         <p class="font-bold text-gray-900 uppercase tracking-wider text-[11px]">Contact Campaign</p>
