@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Timmy Guinn Jr. For High Springs City Commission Seat 1</title>
+  <title>Timmy Guinn Jr. - High Springs City Commission Seat 1</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#fef3d6] text-gray-900 min-h-screen flex flex-col font-sans antialiased">
@@ -12,8 +12,8 @@
   <header class="sticky top-0 z-50 bg-[#fef3d6]/90 backdrop-blur-md border-b border-amber-200/50">
     <div class="max-w-6xl w-full mx-auto px-4 py-4 flex items-center justify-between">
       <nav class="flex items-center gap-2 text-sm sm:text-base font-semibold text-gray-800">
-        <a href="index.html" class="px-4 py-2 rounded-lg hover:bg-amber-100 text-gray-700 hover:text-gray-900 transition-all">Home</a>
-        <a href="about.html" class="px-4 py-2 rounded-lg bg-amber-200/60 text-gray-900 transition-all">About</a>
+        <a href="index.html" class="px-4 py-2 rounded-lg bg-amber-200/60 text-gray-900 transition-all">Home</a>
+        <a href="about.html" class="px-4 py-2 rounded-lg hover:bg-amber-100 text-gray-700 hover:text-gray-900 transition-all">About</a>
       </nav>
       <a 
         href="mailto:guinn4commission@gmail.com" 
@@ -25,91 +25,98 @@
   </header>
 
   <!-- Main Content Area -->
-  <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-1 space-y-8">
+  <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-1 space-y-12">
     
-    <!-- Top Peach Card: Title Banner -->
-    <section class="bg-[#fbbd8c] rounded-2xl p-8 sm:p-12 shadow-md border border-amber-200/60 text-left">
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight leading-none">
-        About Me
-      </h1>
-    </section>
-
-    <!-- Content Peach Card: Subtitle & Experience List -->
-    <section class="bg-[#fbbd8c] rounded-2xl p-6 sm:p-10 shadow-md border border-amber-200/60 text-gray-900">
-      <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-8 leading-snug">
-        My background enables me to relate to and engage with people from all walks of life. The blend of my professional
-        experience and personal story puts me in a unique position to effectively bridge the gap between community needs 
-        and community impact.
-      </h2>
-
-      <!-- Experience Grid -->
-      <div class="space-y-4">
-        <h3 class="text-base sm:text-lg font-bold underline decoration-2 underline-offset-4 text-gray-900">
-          Professional and Life Experience
-        </h3>
+    <!-- Top Grid: Goals + Candidate Photo + Campaign Sign -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      
+      <!-- Candidate Photo + Goals Container (Order 2 on Mobile, Left side on Desktop) -->
+      <div class="order-2 lg:order-1 lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-6 bg-[#fbbd8c] rounded-2xl p-6 sm:p-8 shadow-md border border-amber-200/60 items-center">
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 text-sm sm:text-base font-semibold text-gray-900 leading-relaxed">
-          <!-- Column 1 -->
-          <ul class="space-y-3">
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Farmed for North Central Florida sustainable farm</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Cashier and bagger for Publix</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Survey assistant for old school surveyor</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Lifelong fisherman and hunter</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Network Operations Coordinator for University of Florida Cancer Institute</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Grant writing experience</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Auditing experience</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Youth soccer head coach</span>
-            </li>
-          </ul>
+        <!-- Candidate Photo -->
+        <div class="sm:col-span-1 flex justify-center items-center">
+          <img 
+            src="candidate.JPEG" 
+            alt='Timothy "Timmy" Guinn Jr.' 
+            class="rounded-2xl w-full max-w-[240px] sm:max-w-none h-[280px] sm:h-[340px] object-cover shadow-md border-2 border-amber-100/50"
+            onerror="this.onerror=null; this.src='candidate.png';"
+          />
+        </div>
 
-          <!-- Column 2 -->
-          <ul class="space-y-3">
+        <!-- Goals List -->
+        <div class="sm:col-span-2 text-gray-900">
+          <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight mb-3 leading-tight border-b-2 border-gray-900/10 pb-3">
+            MY GOALS<br>FOR HIGH SPRINGS
+          </h2>
+
+          <!-- Added Top Leadership Title Subheading -->
+          <p class="text-xs sm:text-sm font-extrabold uppercase tracking-wide text-[#1b4332] mb-4">
+            Chair of the High Springs PTA &bull; Subcommittee Member and Chair of National Research Organizations
+          </p>
+
+          <ul class="space-y-3.5 text-sm sm:text-base font-medium leading-relaxed">
             <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>High Springs Community School PTA and PTO Member</span>
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span><strong>Smart Revenue & Sensible Growth</strong> — Increasing city revenue by incentivizing clean business growth to meet our budgetary constraints without raising resident taxes[cite: 6].</span>
             </li>
             <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Alachua County Health Facilities Authority Advisory Board</span>
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span><strong>The Hometown Test</strong> — Every decision by the commission must pass one test: Does this make High Springs a place where our children will want to stay and raise their own families[cite: 6]?</span>
             </li>
             <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Homebrewer and amateur winemaker</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Grew up around a "master carpenter" father and learned everything about house building from the footer to the roof</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <span class="text-[#1b4332] font-bold text-lg leading-none mt-0.5">•</span>
-              <span>Raised cows and helped with farmhand work on a family farm</span>
+              <span class="text-[#1b4332] font-bold text-lg leading-none mt-1">•</span>
+              <span><strong>Effective Governance & Mutual Respect</strong> — True governance requires mutual respect[cite: 8]. I am committed to constructive, respectful debate on the dais—focused on solutions, not on dividing our city or degrading our neighbors[cite: 8]. A unified commission delivers impactful results[cite: 6, 8].</span>
             </li>
           </ul>
         </div>
+
       </div>
+
+      <!-- Campaign Sign (Order 1 on Mobile, Right side on Desktop) -->
+      <div class="order-1 lg:order-2 lg:col-span-1 bg-[#fbbd8c] rounded-2xl p-4 sm:p-6 flex items-center justify-center shadow-md border border-amber-200/60 h-full">
+        <img 
+          src="guinncampaignsign.jpg" 
+          alt='Timothy "Timmy" Guinn Jr. For High Springs City Commission - Seat 1' 
+          class="w-full h-auto rounded-xl shadow-sm object-contain max-h-[380px]"
+          onerror="this.onerror=null; this.src='guinncampaignsign.png';"
+        />
+      </div>
+
+    </div>
+
+    <!-- Wildlife Photo Gallery Section -->
+    <section class="pt-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <!-- Turtle Photo -->
+        <div class="bg-white/40 p-2 rounded-2xl shadow-sm border border-amber-200/50">
+          <img 
+            src="turtle.JPG" 
+            alt="Turtle" 
+            class="rounded-xl w-full h-[260px] object-cover shadow-sm"
+          />
+        </div>
+        <!-- Heron Photo (Tall Portrait Centerpiece) -->
+        <div class="bg-white/40 p-2 rounded-2xl shadow-md border border-amber-200/60 transform md:-translate-y-2">
+          <img 
+            src="heron.JPG" 
+            alt="Heron" 
+            class="rounded-xl w-full h-[420px] object-cover shadow-sm"
+          />
+        </div>
+        <!-- Gator Photo -->
+        <div class="bg-white/40 p-2 rounded-2xl shadow-sm border border-amber-200/50">
+          <img 
+            src="gator.JPG" 
+            alt="Alligator" 
+            class="rounded-xl w-full h-[260px] object-cover shadow-sm"
+          />
+        </div>
+      </div>
+      
+      <!-- Photo Attribution Line -->
+      <p class="text-center text-xs sm:text-sm font-medium text-gray-700 italic mt-6">
+        Photos courtesy of my wife Julia Guinn
+      </p>
     </section>
 
   </main>
@@ -118,7 +125,7 @@
   <footer class="border-t border-amber-200/60 mt-12 bg-amber-100/30">
     <div class="max-w-6xl w-full mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-xs text-gray-700 gap-6">
       <div class="text-left max-w-md font-medium text-gray-800">
-        Paid by Timothy Guinn Jr. for High Springs City Commission - Seat 1
+        Paid by Timothy "Timmy" Guinn for High Springs City Commission - Seat 1
       </div>
       <div class="text-center md:text-right font-medium space-y-1">
         <p class="font-bold text-gray-900 uppercase tracking-wider text-[11px]">Contact Campaign</p>
